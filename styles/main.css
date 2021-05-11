@@ -3,6 +3,11 @@
   src: url(fonts/shoemaker.ttf) format("ttf");
 }
 /* Global styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Remove pesky margin that causes extra white space on sides of screen */
 body {
   margin: 0;
@@ -21,7 +26,8 @@ h3 {
   color: #0f4a1a;
 }
 
-p {
+p,
+li {
   font-family: montserrat, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -117,6 +123,7 @@ a:hover .label {
   font-size: 12px;
 }
 
+/* Div 1 styling */
 /* Set header size and position */
 header {
   width: 100vw;
@@ -173,9 +180,8 @@ header {
 #name-input:focus {
   outline: none;
 }
-/*Div 1 styling ends*/
 
-/*Div 2 styling begins*/
+/*Div 2 styling */
 #ralph-hello {
   display: flex;
   justify-content: center;
@@ -186,6 +192,18 @@ header {
   align-items: flex-end;
 }
 
+/* Div 3 styling */
+#introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#introduction-body {
+  max-width: 75%;
+  margin: 0 auto;
+}
 #sources {
   width: 100vw;
   max-width: 100%;

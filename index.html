@@ -50,7 +50,9 @@
         you?
       </h1>
       <input type="text" placeholder="Name" id="name-input" />
-      <button id="name-submit"><a href="#ralph-hello">Submit</a></button>
+      <button id="name-submit">
+        <a href="#ralph-hello" onclick="bubbleColor('ralph-hello')">Submit</a>
+      </button>
     </div>
     <div id="ralph-hello" class="white-bg">
       <div id="ralph-image">
@@ -59,7 +61,7 @@
           alt="Ralph the rabbit from the short film 'Save Ralph'"
         />
       </div>
-      <div id="intro-body">
+      <div id="ralph-hello-body">
         <p>
           Hi <span class="name-blank">______</span>! I'm Ralph, a lab rabbit.
           You may recognize me from the short film Save Ralph. If you haven’t
@@ -78,63 +80,82 @@
           Thank you for being here. It means a lot when humans care. May I tell
           you a bit more about animal testing today?
         </p>
-        <button id="of-course"><a href="#introduction">Of course</a></button>
+        <button id="of-course">
+          <a href="#introduction" onclick="bubbleColor('introduction')"
+            >Of course</a
+          >
+        </button>
       </div>
     </div>
     <div id="introduction" class="green-bg">
-      <h2>What is animal testing?</h2>
-      <p>
-        The term “animal testing” refers to procedures performed on living
-        animals for purposes of research into basic biology and diseases,
-        assessing the effectiveness of new medicinal products, and testing the
-        human health and/or environmental safety of consumer and industry
-        products such as cosmetics, household cleaners, food additives,
-        pharmaceuticals and industrial/agro chemicals.
-        <br />
-        All procedures, even those classified as “mild,” have the potential to
-        cause the animals physical as well as psychological distress and
-        suffering. Most animals are killed at the end of an experiment, but some
-        may be re-used in subsequent experiments. (Humane Society International)
-      </p>
-      <h3>Did you know?</h3>
-      <ol>
-        <li>
-          95% of all drugs that are shown to be safe and effective in animal
-          tests fail in human trials.
-        </li>
-        <li>
-          Between 2010-2014, half a million animals covered under the AWA were
-          subjected to painful experiments without pain relief.
-        </li>
-        <li>
-          A 2009 survey found that mice and rats used in invasive, painful
-          surgeries were only provided post-operative pain relief about 20% of
-          the time.
-        </li>
-        <li>
-          Every year in the U.S., NIH spends about 47% of research funding on
-          animal experimentation.
-        </li>
-        <li>
-          Currently, 52% of U.S. adults oppose the use of animals in scientific
-          research.
-        </li>
-      </ol>
-      <p>Insert data</p>
-      <button><a href="#game">Next</a></button>
+      <div id="introduction-body">
+        <h2>What is animal testing?</h2>
+        <p>
+          The term “animal testing” refers to procedures performed on living
+          animals for purposes of research into basic biology and diseases,
+          assessing the effectiveness of new medicinal products, and testing the
+          human health and/or environmental safety of consumer and industry
+          products such as cosmetics, household cleaners, food additives,
+          pharmaceuticals and industrial/agro chemicals.
+          <br />
+          All procedures, even those classified as “mild,” have the potential to
+          cause the animals physical as well as psychological distress and
+          suffering. Most animals are killed at the end of an experiment, but
+          some may be re-used in subsequent experiments. (Humane Society
+          International)
+        </p>
+        <h3>Did you know?</h3>
+        <ol>
+          <li>
+            95% of all drugs that are shown to be safe and effective in animal
+            tests fail in human trials.
+          </li>
+          <li>
+            Between 2010-2014, half a million animals covered under the AWA were
+            subjected to painful experiments without pain relief.
+          </li>
+          <li>
+            A 2009 survey found that mice and rats used in invasive, painful
+            surgeries were only provided post-operative pain relief about 20% of
+            the time.
+          </li>
+          <li>
+            Every year in the U.S., NIH spends about 47% of research funding on
+            animal experimentation.
+          </li>
+          <li>
+            Currently, 52% of U.S. adults oppose the use of animals in
+            scientific research.
+          </li>
+        </ol>
+        <p>Insert data</p>
+        <button onclick="">
+          <a href="#game" onclick="bubbleColor('game')">Next</a>
+        </button>
+      </div>
     </div>
     <div id="game" class="white-bg">
       <h2>Let's take a look at your shopping habits</h2>
       <h3>Please select the brands you shop from</h3>
       <table></table>
       <div id="game-result"></div>
-      <button><a href="#help-div">Next</a></button>
+      <button><a href="#how-to-help">Next</a></button>
     </div>
     <div id="how-to-help" class="green-bg">
       <h2>Wondering what you can do to help? We can help.</h2>
       <div id="help-accordion"></div>
-      <button><a href="#sources">View sources</a></button>
+      <button>
+        <a href="#sources" onclick="bubbleColor('sources')">View sources</a>
+      </button>
     </div>
-    <div id="sources"><h2 style="color: white; margin: 0">Sources</h2></div>
+    <div id="sources">
+      <h2 style="color: white; margin: 0">Sources</h2>
+      <button>
+        <p>Source accordion here</p>
+        <a href="#welcome" onclick="bubbleColor('welcome')"
+          >Return to beginning</a
+        >
+      </button>
+    </div>
   </body>
 </html>
