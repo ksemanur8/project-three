@@ -62,29 +62,31 @@
         />
       </div>
       <div id="ralph-hello-body">
-        <p>
-          Hi <span class="name-blank">______</span>! I'm Ralph, a lab rabbit.
-          You may recognize me from the short film Save Ralph. If you haven’t
-          seen it yet, you can watch it here:
-        </p>
-        <iframe
-          width="480"
-          height="270"
-          src="https://www.youtube.com/embed/G393z8s8nFY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <p>
-          Thank you for being here. It means a lot when humans care. May I tell
-          you a bit more about animal testing today?
-        </p>
-        <button id="of-course">
-          <a href="#introduction" onclick="bubbleColor('introduction')"
-            >Of course</a
-          >
-        </button>
+        <div>
+          <p>
+            Hi <span class="name-blank">______</span>! I'm Ralph, a lab rabbit.
+            You may recognize me from the short film Save Ralph. If you haven’t
+            seen it yet, you can watch it here:
+          </p>
+          <iframe
+            width="480"
+            height="270"
+            src="https://www.youtube.com/embed/G393z8s8nFY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Thank you for being here. It means a lot when humans care. May I
+            tell you a bit more about animal testing today?
+          </p>
+          <button id="of-course">
+            <a href="#introduction" onclick="bubbleColor('introduction')"
+              >Of course</a
+            >
+          </button>
+        </div>
       </div>
     </div>
     <div id="introduction" class="green-bg">
@@ -137,7 +139,23 @@
     <div id="game" class="white-bg">
       <h2>Let's take a look at your shopping habits</h2>
       <h3>Please select the brands you shop from</h3>
-      <table></table>
+      <div class="game-board">
+        <div class="box cruelty-free"><p>Burt's Bees</p></div>
+        <div class="box not-free"><p>Aveeno</p></div>
+        <div class="box not-free"><p>Neutrogena</p></div>
+        <div class="box cruelty-free"><p>Paula's Choice</p></div>
+        <div class="box not-free"><p>Nivea</p></div>
+        <div class="box cruelty-free"><p>Glossier</p></div>
+        <div class="box not-free"><p>MAC</p></div>
+        <div class="box not-free"><p>Maybelline</p></div>
+        <div class="box not-free"><p>Revlon</p></div>
+        <div class="box cruelty-free"><p>bareMinerals</p></div>
+        <div class="box cruelty-free"><p>EOS</p></div>
+        <div class="box cruelty-free"><p>None of these</p></div>
+      </div>
+      <div>
+        <button id="score">Score</button> <button id="clear">Clear</button>
+      </div>
       <div id="game-result"></div>
       <button><a href="#how-to-help">Next</a></button>
     </div>
