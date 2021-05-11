@@ -1,12 +1,39 @@
+/* Global styles */
 /* Remove pesky margin that causes extra white space on sides of screen */
 body {
   margin: 0;
 }
 
-a {
+button {
+  background-color: #0f4a1a;
+  border-radius: 20px;
+  color: white;
+  border-style: none;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin-top: 20px;
+}
+
+button > a {
   text-decoration: none;
   color: white;
 }
+
+.white-bg {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+}
+.green-bg {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: #d3ded5;
+}
+
 /* Set header size and position */
 header {
   width: 100vw;
@@ -58,36 +85,11 @@ header {
   font-size: 18px;
   color: rgb(63, 63, 63);
 }
-
 /* Removing blue outline around input on click */
 #name-input:focus {
   outline: none;
 }
-
-#name-submit {
-  background-color: #0f4a1a;
-  border-radius: 20px;
-  color: white;
-  border-style: none;
-  font-family: montserrat, sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 5px 30px;
-  margin-top: 20px;
-}
-
-.white-bg {
-  width: 100vw;
-  max-width: 100%;
-  height: 100vh;
-}
-.green-bg {
-  width: 100vw;
-  max-width: 100%;
-  height: 100vh;
-  background-color: #d3ded5;
-}
+/*Div 1 styling ends*/
 
 #sources {
   width: 100vw;
