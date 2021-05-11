@@ -1,7 +1,31 @@
+@font-face {
+  font-family: "Shoemaker";
+  src: url(fonts/shoemaker.ttf) format("ttf");
+}
 /* Global styles */
 /* Remove pesky margin that causes extra white space on sides of screen */
 body {
   margin: 0;
+}
+
+h2 {
+  font-family: "Shoemaker", sans-serif;
+  color: #0f4a1a;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: #0f4a1a;
+}
+
+p {
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0f4a1a;
 }
 
 button {
@@ -10,7 +34,7 @@ button {
   color: white;
   border-style: none;
   font-family: montserrat, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
   padding: 5px 20px;
@@ -71,6 +95,7 @@ header {
   color: white;
   font-family: montserrat, sans-serif;
   font-weight: 600;
+  font-size: 24px;
 }
 
 /* Stying of input box */
@@ -82,7 +107,7 @@ header {
   padding-left: 20px;
   font-family: montserrat, sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(63, 63, 63);
 }
 /* Removing blue outline around input on click */
@@ -90,6 +115,17 @@ header {
   outline: none;
 }
 /*Div 1 styling ends*/
+
+/*Div 2 styling begins*/
+#ralph-hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ralph-image {
+  align-items: flex-end;
+}
 
 #sources {
   width: 100vw;

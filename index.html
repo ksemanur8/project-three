@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
     <script src="./scripts/main.js" defer></script>
-
     <title>Save Ralph</title>
   </head>
   <body>
@@ -20,7 +19,7 @@
       ></video>
     </header>
     <div id="welcome">
-      <h2 id="welcome-message">
+      <h1 id="welcome-message">
         Welcome! Thank you for your interest in animal testing. What can we call
         you?
       </h2>
@@ -28,30 +27,33 @@
       <button id="name-submit"><a href="#ralph-hello">Submit</a></button>
     </div>
     <div id="ralph-hello" class="white-bg">
-      <a id="#ralph-div"></a>
-      <img
-        src="./images/ralph.png"
-        alt="Ralph the rabbit from the short film 'Save Ralph'"
-      />
-      <p>
-        Hi <span class="name">______</span>! I'm Ralph, a lab rabbit. You may
-        recognize me from the short film Save Ralph. If you haven’t seen it yet,
-        you can watch it here:
-      </p>
-      <iframe
-        width="480"
-        height="270"
-        src="https://www.youtube.com/embed/G393z8s8nFY"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>
-        Thank you for being here. It means a lot when humans care. May I tell
-        you a bit more about animal testing today?
-      </p>
-      <button id="of-course"><a href="#introduction">Of course</a></button>
+      <div id="ralph-image">
+        <img
+          src="./images/ralph.png"
+          alt="Ralph the rabbit from the short film 'Save Ralph'"
+        />
+      </div>
+      <div id="intro-body">
+        <p>
+          Hi <span class="name">______</span>! I'm Ralph, a lab rabbit. You may
+          recognize me from the short film Save Ralph. If you haven’t seen it
+          yet, you can watch it here:
+        </p>
+        <iframe
+          width="480"
+          height="270"
+          src="https://www.youtube.com/embed/G393z8s8nFY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Thank you for being here. It means a lot when humans care. May I tell
+          you a bit more about animal testing today?
+        </p>
+        <button id="of-course"><a href="#introduction">Of course</a></button>
+      </div>
     </div>
     <div id="introduction" class="green-bg">
       <h2>What is animal testing?</h2>
