@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
+    <script src="./scripts/main.js" defer></script>
+
+    <title>Save Ralph</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <video
+        src="videos/save-ralph-intro.mp4"
+        autoplay
+        muted
+        id="welcome-video"
+      ></video>
+    </header>
+    <div id="welcome">
+      <a id="#top"></a>
+      <h2 id="welcome-message">
+        Welcome! Thank you for your interest in animal testing. What can we call
+        you?
+      </h2>
+      <input type="text" placeholder="Name" id="name-input" />
+      <button id="name-submit"><a href="#ralph-hello"></a>Submit</button>
+    </div>
+    <div id="ralph-hello" class="white-bg"><a id="#ralph-hello"></a></div>
+    <div id="introduction" class="green-bg"><a id="#intro-to-at"></a></div>
+    <div id="game" class="white-bg"><a id="#game"></a></div>
+    <div id="how-to-help" class="green-bg"><a id="#helping"></a></div>
+    <div id="references"><a id="#bottom"></a></div>
+  </body>
 </html>
