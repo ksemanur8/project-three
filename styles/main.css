@@ -32,18 +32,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation-duration: 10s;
-  animation-name: fadeIn;
-}
-
-/* FadeIn animation set up. Goes from 0 opacity to 100 */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Styling for contents of welcome overlay begins */
