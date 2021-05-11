@@ -10,6 +10,32 @@
     <title>Save Ralph</title>
   </head>
   <body>
+    <nav class="desktop-nav">
+      <a href="#welcome" onclick="bubbleColor('welcome')">
+        <div class="bubble"></div>
+        <div class="label">Welcome</div>
+      </a>
+      <a href="#ralph-hello" onclick="bubbleColor('ralph-hello')">
+        <div class="bubble"></div>
+        <div class="label">Meet Ralph</div>
+      </a>
+      <a href="#introduction" onclick="bubbleColor('introduction')">
+        <div class="bubble"></div>
+        <div class="label">What is animal testing?</div>
+      </a>
+      <a href="#game" onclick="bubbleColor('game')">
+        <div class="bubble"></div>
+        <div class="label">Brand game</div>
+      </a>
+      <a href="#how-to-help" onclick="bubbleColor('how-to-help')">
+        <div class="bubble"></div>
+        <div class="label">How to help</div>
+      </a>
+      <a href="#sources" onclick="bubbleColor('sources')">
+        <div class="bubble"></div>
+        <div class="label">Sources</div>
+      </a>
+    </nav>
     <header>
       <video
         src="videos/save-ralph-intro.mp4"
@@ -22,7 +48,7 @@
       <h1 id="welcome-message">
         Welcome! Thank you for your interest in animal testing. What can we call
         you?
-      </h2>
+      </h1>
       <input type="text" placeholder="Name" id="name-input" />
       <button id="name-submit"><a href="#ralph-hello">Submit</a></button>
     </div>
@@ -35,9 +61,9 @@
       </div>
       <div id="intro-body">
         <p>
-          Hi <span class="name">______</span>! I'm Ralph, a lab rabbit. You may
-          recognize me from the short film Save Ralph. If you haven’t seen it
-          yet, you can watch it here:
+          Hi <span class="name-blank">______</span>! I'm Ralph, a lab rabbit.
+          You may recognize me from the short film Save Ralph. If you haven’t
+          seen it yet, you can watch it here:
         </p>
         <iframe
           width="480"
@@ -105,11 +131,10 @@
       <button><a href="#help-div">Next</a></button>
     </div>
     <div id="how-to-help" class="green-bg">
-      <a id="help-div"></a>
       <h2>Wondering what you can do to help? We can help.</h2>
       <div id="help-accordion"></div>
       <button><a href="#sources">View sources</a></button>
     </div>
-    <div id="sources">Sources</div>
+    <div id="sources"><h2 style="color: white; margin: 0">Sources</h2></div>
   </body>
 </html>
