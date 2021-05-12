@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/flip-card.css" />
     <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
     <script src="./scripts/main.js" defer></script>
     <title>Save Ralph</title>
@@ -130,10 +131,18 @@
             scientific research.
           </li>
         </ol>
-        <p>Insert data</p>
-        <button onclick="">
-          <a href="#game" onclick="bubbleColor('game')">Next</a>
-        </button>
+        <div
+          class="flourish-embed flourish-chart"
+          data-src="visualisation/6118944"
+          data-height="40%"
+        >
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+        <div id="to-game-button">
+          <button onclick="">
+            <a href="#game" onclick="bubbleColor('game')">Next</a>
+          </button>
+        </div>
       </div>
     </div>
     <div id="game" class="white-bg">
@@ -161,19 +170,23 @@
     </div>
     <div id="how-to-help" class="green-bg">
       <h2>Wondering what you can do to help? We can help.</h2>
-      <div id="help-accordion"></div>
       <button>
         <a href="#sources" onclick="bubbleColor('sources')">View sources</a>
       </button>
     </div>
     <div id="sources">
       <h2 style="color: white; margin: 0">Sources</h2>
-      <button>
-        <p>Source accordion here</p>
-        <a href="#welcome" onclick="bubbleColor('welcome')"
-          >Return to beginning</a
-        >
-      </button>
+      <ol id="source-list">
+        <li> <a href="https://www.hsi.org/news-media/about/"></a>
+        Humane Society International</li>
+      <li><a href="https://www.peta.org/features/animal-experimentation-statistics/"></a>
+        PETA</li>
+      <li><a href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/"></a>Cruelty Free Kitty</li>
+      <li><a href="https://speakingofresearch.com/facts/statistics/"></a>Speaking of Research</li>
+    </ol>
+      <a href="#welcome" onclick="bubbleColor('welcome')"
+        ><button>Return to beginning</button><i class="fas fa-home" style="color: white"><a href="#welcome" onclick="bubbleColor('welcome')"></i
+      ></a>
     </div>
   </body>
 </html>
