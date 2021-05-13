@@ -1,16 +1,16 @@
 /* Injecting name input into spans */
-let nameButton = document.getElementById("name-submit");
+let nameButton = document.getElementById('name-submit');
 
 function injectName() {
-  let name = document.getElementById("name-input").value;
-  let spans = document.querySelectorAll("span.name-blank");
+  let name = document.getElementById('name-input').value;
+  let spans = document.querySelectorAll('span.name-blank');
   
   spans.forEach((span) => {
     span.innerText = name;
   });
 }
 
-nameButton.addEventListener("click", injectName);
+nameButton.addEventListener('click', injectName);
 
 /* Intersection observer for changing bubble nav color! */
 let options = {
@@ -59,3 +59,50 @@ let slides = document.querySelectorAll('div.slide');
 slides.forEach((slide) => {
     observer.observe(slide);
 });
+
+
+/* Game board functionality */
+let boxes = document.querySelectorAll('div.box');
+let scoreButton = document.getElementById('score');
+let resetButton = document.getElementById('reset');
+let selected = [];
+
+function boxSelected(event) {
+    if(event.target.classList.contains('box-highlight')) {
+        event.target.classList.remove('box-highlight');
+        selected.pop(event.target);
+    } else {
+        event.target.classList.add('box-highlight');
+        selected.push(event.target);
+    }
+}
+
+function reportScore() {
+    let count = 0;
+    selected.forEach((box) => {
+        if(box.classList.contains('not-free')) {
+            box.classList.add('bad-brand');
+            count++;
+        }
+    })
+    if(count > 0) {
+        document.getElementById('result-text').innerHTML = `Unfortunately ${count} of the brands you shop from are not cruelty-free:(`;
+    } else {
+        document.getElementById('result-text').innerHTML = `None of your selected brands test on animals. Thank you!:)`;
+    }
+}
+
+function resetBoard() {
+    selected.forEach((box) => {
+        box.classList.remove('box-highlight');
+        box.classList.remove('bad-brand');
+    })
+    document.getElementById('result-text').innerHTML = '';
+    selected = [];
+}
+
+boxes.forEach((box) => {
+    box.addEventListener('click', boxSelected);
+});
+scoreButton.addEventListener('click', reportScore);
+resetButton.addEventListener('click', resetBoard);
