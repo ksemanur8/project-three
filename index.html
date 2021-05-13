@@ -5,34 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="stylesheet" href="./styles/flip-card.css" />
     <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
     <script src="./scripts/main.js" defer></script>
     <title>Save Ralph</title>
   </head>
   <body>
     <nav class="desktop-nav">
-      <a href="#welcome" onclick="bubbleColor('welcome')">
+      <a href="#welcome">
         <div class="bubble"></div>
         <div class="label">Welcome</div>
       </a>
-      <a href="#ralph-hello" onclick="bubbleColor('ralph-hello')">
+      <a href="#ralph-hello">
         <div class="bubble"></div>
         <div class="label">Meet Ralph</div>
       </a>
-      <a href="#introduction" onclick="bubbleColor('introduction')">
+      <a href="#introduction">
         <div class="bubble"></div>
         <div class="label">What is animal testing?</div>
       </a>
-      <a href="#game" onclick="bubbleColor('game')">
+      <a href="#game">
         <div class="bubble"></div>
         <div class="label">Brand game</div>
       </a>
-      <a href="#how-to-help" onclick="bubbleColor('how-to-help')">
+      <a href="#how-to-help">
         <div class="bubble"></div>
         <div class="label">How to help</div>
       </a>
-      <a href="#sources" onclick="bubbleColor('sources')">
+      <a href="#sources">
         <div class="bubble"></div>
         <div class="label">Sources</div>
       </a>
@@ -45,14 +44,14 @@
         id="welcome-video"
       ></video>
     </header>
-    <div id="welcome">
+    <div id="welcome" class="dark slide">
       <h1 id="welcome-message">
         Welcome! Thank you for your interest in animal testing. What can we call
         you?
       </h1>
       <input type="text" placeholder="Name" id="name-input" />
       <button id="name-submit">
-        <a href="#ralph-hello" onclick="bubbleColor('ralph-hello')">Submit</a>
+        <a href="#ralph-hello">Submit</a>
       </button>
     </div>
     <div id="ralph-hello" class="white-bg">
@@ -62,7 +61,7 @@
           alt="Ralph the rabbit from the short film 'Save Ralph'"
         />
       </div>
-      <div id="ralph-hello-body">
+      <div id="ralph-hello-body" class="light slide">
         <div>
           <p>
             Hi <span class="name-blank">______</span>! I'm Ralph, a lab rabbit.
@@ -83,14 +82,13 @@
             tell you a bit more about animal testing today?
           </p>
           <button id="of-course">
-            <a href="#introduction" onclick="bubbleColor('introduction')"
-              >Of course</a
+            <a href="#introduction">Of course</a
             >
           </button>
         </div>
       </div>
     </div>
-    <div id="introduction" class="green-bg">
+    <div id="introduction" class="light green-bg slide">
       <div id="introduction-body">
         <h2>What is animal testing?</h2>
         <p>
@@ -140,12 +138,12 @@
         </div>
         <div id="to-game-button">
           <button onclick="">
-            <a href="#game" onclick="bubbleColor('game')">Next</a>
+            <a href="#game">Next</a>
           </button>
         </div>
       </div>
     </div>
-    <div id="game" class="white-bg">
+    <div id="game" class="light white-bg slide">
       <h2>Let's take a look at your shopping habits</h2>
       <h3>Please select the brands you shop from</h3>
       <div class="game-board">
@@ -168,13 +166,13 @@
       <div id="game-result"></div>
       <button><a href="#how-to-help">Next</a></button>
     </div>
-    <div id="how-to-help" class="green-bg">
+    <div id="how-to-help" class="light green-bg slide">
       <h2>Wondering what you can do to help? We can help.</h2>
       <button>
-        <a href="#sources" onclick="bubbleColor('sources')">View sources</a>
+        <a href="#sources">View sources</a>
       </button>
     </div>
-    <div id="sources">
+    <div id="sources" class="dark slide">
       <h2 style="color: white; margin: 0">Sources</h2>
       <ol id="source-list">
         <li> <a href="https://www.hsi.org/news-media/about/"></a>
@@ -183,9 +181,9 @@
         PETA</li>
       <li><a href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/"></a>Cruelty Free Kitty</li>
       <li><a href="https://speakingofresearch.com/facts/statistics/"></a>Speaking of Research</li>
-    </ol>
-      <a href="#welcome" onclick="bubbleColor('welcome')"
-        ><button>Return to beginning</button><i class="fas fa-home" style="color: white"><a href="#welcome" onclick="bubbleColor('welcome')"></i
+      </ol>
+      <a href="#welcome">
+        <button>Return to beginning</button><i class="fas fa-home" style="color: white"><a href="#welcome" onclick="bubbleColor('welcome')"></i
       ></a>
     </div>
   </body>
