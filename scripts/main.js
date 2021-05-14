@@ -59,7 +59,11 @@ slides.forEach((slide) => {
 });
 
 
-/* Game board functionality */
+/* Game board functionality
+* Collecting selected boxes in an array, adding event listeners to
+* score and clear buttons, taking action on board if those buttons
+* are pressed.
+*/
 let boxes = document.querySelectorAll('.box');
 let scoreButton = document.getElementById('score');
 let resetButton = document.getElementById('reset');
@@ -108,7 +112,9 @@ boxes.forEach((box) => {
 scoreButton.addEventListener('click', reportScore);
 resetButton.addEventListener('click', resetBoard);
 
-/* Accordion */
+/*  Accordion 
+*   Adding click event listener to each panel of accordion
+*/
 let accordion = document.getElementsByClassName("panel");
           for (i = 0; i < accordion.length; i++) {
             accordion[i].addEventListener("click", function () {
