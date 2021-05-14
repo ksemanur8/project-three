@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/gii6kix.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <script src="./scripts/main.js" defer></script>
     <title>Save Ralph</title>
   </head>
@@ -31,7 +35,7 @@
         <div class="bubble"></div>
         <div class="label">How to help</div>
       </a>
-      <a href="#sources">
+      <a href="#how-to-help">
         <div class="bubble"></div>
         <div class="label">Sources</div>
       </a>
@@ -65,25 +69,25 @@
         <div>
           <p>
             Hi <span class="name-blank">______</span>! I'm Ralph, a lab rabbit.
-            You might recognize me from the short film Save Ralph. If you haven’t
-            seen it yet, you can watch it here:
+            You might recognize me from the short film Save Ralph. If you
+            haven’t seen it yet, you can watch it here:
           </p>
           <div class="responsive-container">
-          <iframe class="responsive-iframe"
-            src="https://www.youtube.com/embed/G393z8s8nFY"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+            <iframe
+              class="responsive-iframe"
+              src="https://www.youtube.com/embed/G393z8s8nFY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <p>
             Thank you for being here. It means a lot when humans care. May I
             tell you a bit more about animal testing today?
           </p>
           <button id="of-course">
-            <a href="#introduction">Of course</a
-            >
+            <a href="#introduction">Of course</a>
           </button>
         </div>
       </div>
@@ -129,18 +133,18 @@
             scientific research.
           </li>
         </ol>
-        <div
-          class="flourish-embed flourish-chart"
-          data-src="visualisation/6118944"
-          data-height="40%"
-        >
-          <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
-        <div id="to-game-button">
-          <button onclick="">
-            <a href="#game">Next</a>
-          </button>
-        </div>
+      </div>
+      <div
+        class="flourish-embed flourish-chart"
+        data-src="visualisation/6118944"
+        data-height="40%"
+      >
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+      </div>
+      <div id="to-game-button">
+        <button onclick="">
+          <a href="#game">Next</a>
+        </button>
       </div>
     </div>
     <div id="game" class="light white-bg slide">
@@ -156,7 +160,7 @@
         <div class="box not-free"><p>MAC</p></div>
         <div class="box not-free"><p>Maybelline</p></div>
         <div class="box not-free"><p>Revlon</p></div>
-        <div class="box cruelty-free"><p>bareMinerals</p></div>
+        <div class="box cruelty-free"><p>bare Minerals</p></div>
         <div class="box cruelty-free"><p>EOS</p></div>
         <div class="box cruelty-free"><p>None of these</p></div>
       </div>
@@ -167,28 +171,53 @@
       <button><a href="#how-to-help">Next</a></button>
     </div>
     <div id="how-to-help" class="light green-bg slide">
-      <h2>Wondering what you can do to help? We can help.</h2>
-      <button>
-        <a href="#sources">View sources</a>
-      </button>
-    </div>
-    <div id="sources" class="dark slide">
-      
-      <a href="#welcome">
-        <button>Return to beginning</button><i class="fas fa-home" style="color: white"><a href="#welcome" onclick="bubbleColor('welcome')"></i
-      ></a>
+      <div id="help-content">
+        <h2>Wondering what you can do to help? We can help.</h2>
+        <button id="view-sources">View sources</button>
+        <a
+          href="#welcome"
+          class="fas fa-home fa-3x"
+          style="color: #0f4a1a; text-decoration: none"
+        ></a>
+      </div>
     </div>
 
-    <div class="modal-container">
-      <div class="modal">
-        <h2 style="color: white; margin: 0">Sources</h2>
+    <div id="source-container">
+      <div id="source-modal">
+        <h2>Sources</h2>
         <ol id="source-list">
-          <li> <a href="https://www.hsi.org/news-media/about/"></a>
-          Humane Society International</li>
-        <li><a href="https://www.peta.org/features/animal-experimentation-statistics/"></a>PETA</li>
-        <li><a href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/"></a>Cruelty Free Kitty</li>
-        <li><a href="https://speakingofresearch.com/facts/statistics/"></a>Speaking of Research</li>
-      </ol></div>
+          <li>
+            <a href="https://www.hsi.org/news-media/about/"
+              >https://www.hsi.org/news-media/about/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.peta.org/features/animal-experimentation-statistics/"
+              >https://www.peta.org/features/animal-experimentation-statistics/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/"
+              >https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.crueltyfreekitty.com/companies-that-test-on-animals/
+              "
+              >https://www.crueltyfreekitty.com/companies-that-test-on-animals/
+            </a>
+          </li>
+          <li>
+            <a href="https://speakingofresearch.com/facts/statistics/"
+              >https://speakingofresearch.com/facts/statistics/</a
+            >
+          </li>
+        </ol>
+        <button id="close-sources">Close</button>
+      </div>
     </div>
   </body>
 </html>

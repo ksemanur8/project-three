@@ -49,9 +49,12 @@ button {
   margin-bottom: 30px;
 }
 
-button > a {
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
   text-decoration: none;
-  color: white;
 }
 
 .white-bg {
@@ -156,7 +159,9 @@ header {
 /* Styling for contents of welcome overlay begins */
 /* Styling of text in welcome overlay */
 #welcome-message {
-  width: 85%;
+  display: flex;
+  justify-content: center;
+  max-width: 85%;
   color: white;
   font-family: montserrat, sans-serif;
   font-weight: 600;
@@ -166,7 +171,7 @@ header {
 
 /* Stying of input box */
 #name-input {
-  width: 20%;
+  max-width: 30%;
   height: 32px;
   border-radius: 20px;
   border-style: none;
@@ -224,27 +229,19 @@ header {
 }
 
 /* Div 3 styling */
-#introduction {
+
+#introduction-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  object-fit: contain;
-}
-
-#introduction-body {
-  max-width: 75%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
-#introduction-body > p,
-h2,
-h3 {
-  text-align: center;
-}
-
 .flourish-chart {
-  object-fit: contain;
+  max-width: 85%;
+  margin: 0 auto;
 }
 
 #to-game-button {
@@ -304,48 +301,57 @@ h3 {
 }
 
 /* Div 5 styling */
-#how-to-help {
+#help-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 85%;
+  margin: 0 auto;
 }
-
 /* Div 6 styling */
 
-#sources {
+#source-container {
+  background-color: rgba(128, 128, 128, 0.87);
+  opacity: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
-  max-width: 100%;
   height: 100vh;
-  background-color: #0f4a1a;
+  pointer-events: none;
 }
 
-.fas fa-home {
-  color: #d3ded5;
+#source-container.show {
+  pointer-events: auto;
+  opacity: 1;
 }
 
-#source-list > li {
-  color: white;
+#source-modal {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0px 50px;
+  width: 600px;
+  max-width: 80%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
   #welcome-message {
-    width: 75%;
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  #name-input {
-    width: 30%;
+    font-size: 20px;
   }
 
   h2 {
     font-size: 22px;
   }
+
   h3 {
     font-size: 16px;
   }
@@ -353,6 +359,10 @@ h3 {
   p,
   li {
     font-size: 14px;
+  }
+
+  .box > p {
+    font-size: 11px;
   }
 
   #ralph-hello {
@@ -379,13 +389,7 @@ h3 {
   }
 
   .game-board {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 90px 90px 90px 90px;
-    grid-template-rows: 90px 90px 90px 10px;
-  }
-
-  .box > p {
-    font-size: 12px;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 10px;
   }
 }

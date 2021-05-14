@@ -107,3 +107,19 @@ boxes.forEach((box) => {
 });
 scoreButton.addEventListener('click', reportScore);
 resetButton.addEventListener('click', resetBoard);
+
+/* Source modal */
+let viewButton = document.getElementById('view-sources');
+let sourceContainer = document.getElementById('source-container');
+let closeButton = document.getElementById('close-sources');
+
+function modalView() {
+    if(sourceContainer.classList.contains('show')) {
+        sourceContainer.classList.remove('show');
+    } else {
+        sourceContainer.classList.add('show');
+    }
+}
+
+viewButton.addEventListener('click', modalView);
+closeButton.addEventListener('click', modalView);
