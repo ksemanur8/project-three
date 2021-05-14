@@ -108,6 +108,14 @@ boxes.forEach((box) => {
 scoreButton.addEventListener('click', reportScore);
 resetButton.addEventListener('click', resetBoard);
 
+/* Accordion */
+let accordion = document.getElementsByClassName("panel");
+          for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+            });
+          }
+
 /* Source modal */
 let viewButton = document.getElementById('view-sources');
 let sourceContainer = document.getElementById('source-container');
