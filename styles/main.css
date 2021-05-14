@@ -47,6 +47,7 @@ button {
   padding: 5px 20px;
   margin-top: 20px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 a,
@@ -283,6 +284,7 @@ header {
 .box > p {
   border: none;
   box-shadow: none;
+  pointer-events: none;
 }
 
 .box-highlight {
