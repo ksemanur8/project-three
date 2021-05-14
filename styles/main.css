@@ -166,7 +166,7 @@ header {
 
 /* Stying of input box */
 #name-input {
-  width: 30%;
+  width: 20%;
   height: 32px;
   border-radius: 20px;
   border-style: none;
@@ -285,6 +285,7 @@ h3 {
 
 .box > p {
   border: none;
+  box-shadow: none;
 }
 
 .box-highlight {
