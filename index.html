@@ -65,18 +65,18 @@
         <div>
           <p>
             Hi <span class="name-blank">______</span>! I'm Ralph, a lab rabbit.
-            You may recognize me from the short film Save Ralph. If you haven’t
+            You might recognize me from the short film Save Ralph. If you haven’t
             seen it yet, you can watch it here:
           </p>
-          <iframe
-            width="480"
-            height="270"
+          <div class="responsive-container">
+          <iframe class="responsive-iframe"
             src="https://www.youtube.com/embed/G393z8s8nFY"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
+        </div>
           <p>
             Thank you for being here. It means a lot when humans care. May I
             tell you a bit more about animal testing today?
@@ -173,18 +173,22 @@
       </button>
     </div>
     <div id="sources" class="dark slide">
-      <h2 style="color: white; margin: 0">Sources</h2>
-      <ol id="source-list">
-        <li> <a href="https://www.hsi.org/news-media/about/"></a>
-        Humane Society International</li>
-      <li><a href="https://www.peta.org/features/animal-experimentation-statistics/"></a>
-        PETA</li>
-      <li><a href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/"></a>Cruelty Free Kitty</li>
-      <li><a href="https://speakingofresearch.com/facts/statistics/"></a>Speaking of Research</li>
-      </ol>
+      
       <a href="#welcome">
         <button>Return to beginning</button><i class="fas fa-home" style="color: white"><a href="#welcome" onclick="bubbleColor('welcome')"></i
       ></a>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h2 style="color: white; margin: 0">Sources</h2>
+        <ol id="source-list">
+          <li> <a href="https://www.hsi.org/news-media/about/"></a>
+          Humane Society International</li>
+        <li><a href="https://www.peta.org/features/animal-experimentation-statistics/"></a>PETA</li>
+        <li><a href="https://www.crueltyfreekitty.com/list-of-cruelty-free-brands/"></a>Cruelty Free Kitty</li>
+        <li><a href="https://speakingofresearch.com/facts/statistics/"></a>Speaking of Research</li>
+      </ol></div>
     </div>
   </body>
 </html>

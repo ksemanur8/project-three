@@ -47,22 +47,20 @@ function intersectionHandler(entries, observer) {
     });
 }
 
+/* Create observer */
 let observer = new IntersectionObserver(intersectionHandler, options);
-/*
-    We need to get reference to all of our slides
-*/
+
+/* Get reference to all of our slides */
 let slides = document.querySelectorAll('div.slide');
-/* 
-    Loop through all slides and tell the observer to
-    observe each one
-*/
+
+/* Loop through all slides and tell the observer to observe each one */
 slides.forEach((slide) => {
     observer.observe(slide);
 });
 
 
 /* Game board functionality */
-let boxes = document.querySelectorAll('div.box');
+let boxes = document.querySelectorAll('.box');
 let scoreButton = document.getElementById('score');
 let resetButton = document.getElementById('reset');
 let selected = [];
@@ -83,12 +81,14 @@ function reportScore() {
         if(box.classList.contains('not-free')) {
             box.classList.add('bad-brand');
             count++;
+        } else {
+            box.classList.add('good-brand');
         }
     })
     if(count > 0) {
-        document.getElementById('result-text').innerHTML = `Unfortunately ${count} of the brands you shop from are not cruelty-free:(`;
+        document.getElementById('result-text').innerHTML = `Unfortunately ${count} of the brands you shop from are not cruelty-free :(`;
     } else {
-        document.getElementById('result-text').innerHTML = `None of your selected brands test on animals. Thank you!:)`;
+        document.getElementById('result-text').innerHTML = `None of your selected brands test on animals. Thank you! :)`;
     }
 }
 
@@ -96,6 +96,7 @@ function resetBoard() {
     selected.forEach((box) => {
         box.classList.remove('box-highlight');
         box.classList.remove('bad-brand');
+        box.classList.remove('good-brand');
     })
     document.getElementById('result-text').innerHTML = '';
     selected = [];
