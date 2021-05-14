@@ -440,7 +440,7 @@ header {
   }
 
   .box > p {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   #ralph-hello {
@@ -467,7 +467,7 @@ header {
   }
 
   .game-board {
-    grid-template-columns: 80px 80px 80px 80px;
-    grid-template-rows: 80px 80px 80px 10px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
   }
 }
